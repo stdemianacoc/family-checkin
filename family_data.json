@@ -1,0 +1,10 @@
+{
+  "ABC123": {
+    "primary_name": "John Smith",
+    "family_members": ["John Smith", "Jane Smith", "Liam Smith"]
+  },
+  "XYZ789": {
+    "primary_name": "Mona Ali",
+    "family_members": ["Mona Ali", "Sarah Ali"]
+  }
+}
