@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Family Check-In</title>
+  <style>
+    body { font-family: Arial; max-width: 600px; margin: 50px auto; }
+    .hidden { display: none; }
+    .error { color: red; }
+    input, button { padding: 10px; margin: 10px 0; width: 100%; }
+  </style>
+</head>
+<body>
+  <h2>Family Check-In</h2>
+  <div id="auth">
+    <p>Please enter the event check-in password:</p>
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="authenticate()">Unlock</button>
+    <p id="auth-error" class="error hidden">Incorrect password.</p>
+  </div>
+
+  <div id="family-info" class="hidden">
+    <h3>Family Members:</h3>
+    <ul id="members-list"></ul>
+    <p id="not-found" class="error hidden">No family found for this token.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
