@@ -9,15 +9,15 @@ const token = urlParams.get("token");
 const encryptedDecryptionKey = window.ENCRYPTED_KEY;
 const keyPassphrase = "your-secure-passphrase"; // This will be what users need to enter
 
-function authenticate() {
-  const input = document.getElementById("kelmetser").value;
-  if (input === correctkelmetser) {
-    document.getElementById("auth").classList.add("hidden");
-    document.getElementById("key-auth").classList.remove("hidden");
-  } else {
-    document.getElementById("auth-error").classList.remove("hidden");
-  }
-}
+// function authenticate() {
+//   const input = document.getElementById("kelmetser").value;
+//   if (input === correctkelmetser) {
+//     document.getElementById("auth").classList.add("hidden");
+//     document.getElementById("key-auth").classList.remove("hidden");
+//   } else {
+//     document.getElementById("auth-error").classList.remove("hidden");
+//   }
+// }
 
 function validateKeyPassphrase() {
   const passphraseInput = document.getElementById("key-passphrase").value;
