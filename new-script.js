@@ -77,8 +77,8 @@ async function loadFamilyInfo() {
     }
     
     const family = data[token];
-    const parent = document.getElementById("Parent-Name")
-    parent.value = family.primary_name
+    // const parent = document.getElementById("Parent-Name")
+    document.getElementById("Parent-Name").value = family.primary_name
     const list = document.getElementById("members-list");
     family.family_members.forEach((name) => {
       const li = document.createElement("li");
